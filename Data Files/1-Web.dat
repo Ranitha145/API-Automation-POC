@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>59862883-faf9-418e-b96e-0d142d614643</dataFileGUID>
-   <dataSourceUrl>C:\Users\ranitha\Desktop\1-Web  Test Data.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\ranitha\git\API-Automation-POC\Test Data\1-Web  Test Data.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
