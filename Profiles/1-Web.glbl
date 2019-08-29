@@ -9,4 +9,9 @@
       <initValue>findTestData('1-Web')</initValue>
       <name>Login_URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'yONfsmQZsy3t/DyFmYYUSg=='</initValue>
+      <name>Passwrd_URL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

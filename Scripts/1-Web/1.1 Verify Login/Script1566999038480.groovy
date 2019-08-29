@@ -21,10 +21,14 @@ WebUI.navigateToUrl(findTestData('1-Web').getValue(1, 1))
 WebUI.setText(findTestObject('1-Web/Page_Sentrifugo - Open Source HRMS/input_Login_username'), findTestData('1-Web').getValue(
         2, 1))
 
-WebUI.setEncryptedText(findTestObject('1-Web/Page_Sentrifugo - Open Source HRMS/input_Login_password'), findTestData('1-Web').getValue(
+WebUI.setText(findTestObject('1-Web/Page_Sentrifugo - Open Source HRMS/input_Login_password'), findTestData('1-Web').getValue(
         3, 1))
 
 WebUI.click(findTestObject('1-Web/Page_Sentrifugo - Open Source HRMS/input_Login_loginsubmit'))
+
+WebUI.waitForPageLoad(1)
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/1-Web/Page_Sentrifugo - Open Source HRMS/img'), 0)
 
 Date today = new Date()
 
@@ -33,6 +37,10 @@ String todaysDate = today.format('MM_dd_yy')
 String nowTime = today.format('hh_mm_ss')
 
 WebUI.takeScreenshot(((('D:/Katalon/screenshot/image_' + todaysDate) + '-') + nowTime) + '.PNG')
+
+WebUI.click(findTestObject('Object Repository/1-Web/Page_Sentrifugo - Open Source HRMS/a_Super Admin'))
+
+WebUI.click(findTestObject('Object Repository/1-Web/Page_Sentrifugo - Open Source HRMS/a_Logout'))
 
 WebUI.closeBrowser()
 

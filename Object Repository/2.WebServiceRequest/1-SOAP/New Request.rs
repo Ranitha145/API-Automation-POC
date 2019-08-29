@@ -13,10 +13,10 @@
    <restRequestMethod></restRequestMethod>
    <restUrl></restUrl>
    <serviceType>SOAP</serviceType>
-   <soapBody></soapBody>
+   <soapBody>https://svn.apache.org/repos/asf/airavata/sandbox/xbaya-web/test/Calculator.wsdl</soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
-   <soapServiceFunction></soapServiceFunction>
+   <soapServiceFunction>GetWeatherInformation</soapServiceFunction>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -31,5 +31,5 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 </verificationScript>
-   <wsdlAddress>http://35.196.84.119:8080/ws/loadService20.wsdl</wsdlAddress>
+   <wsdlAddress>http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL</wsdlAddress>
 </WebServiceRequestEntity>
